@@ -12,6 +12,8 @@ dependencies = ["PySide6"]
 
 [project.optional-dependencies]
 dev = ["ruff", "pytest"]
+qt6 = ["PySide6"]
+qt5 = ["PySide5"]
 
 [project.scripts]
-urlpeek = "urlpeek.__main__"
+urlpeek = "urlpeek.__main__:main"
