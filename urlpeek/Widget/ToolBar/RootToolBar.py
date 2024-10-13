@@ -2,16 +2,16 @@ from PySide6.QtCore import QSize, QCoreApplication
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QFileDialog, QToolBar, QSizePolicy
 
-from ..WebView import WebView
+from urlpeek import Window
 from ..LabelEdit import LabelEdit
-from typing import TypeVar
+from ..WebView import WebView
 
 
 class RootToolBar(QToolBar):
     label: LabelEdit
     webview: WebView
 
-    def __init__(self, parent, url: str):
+    def __init__(self, parent: "Window.MainWindow", url: str):
         super(RootToolBar, self).__init__("root", parent)
         self.setIconSize(QSize(24, 24))
         self.setMovable(False)
