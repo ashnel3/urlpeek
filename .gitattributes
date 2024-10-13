@@ -1,0 +1,18 @@
+* text=auto
+
+# Document
+*.md                                          text
+*.txt                                         text
+
+# Config
+*.json                                        text
+*.toml                                        text
+*.yaml                                        text
+*.yml                                         text
+*.xml                                         text
+
+# Qt
+*.qml                                         text
+
+# Source
+*.py                                          text

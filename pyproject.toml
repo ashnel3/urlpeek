@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urlpeek"
+description = ""
+version = "0.1.0"
+
+requires-python = ">= 3.8"
+dependencies = ["PySide6"]
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest"]
+
+[project.scripts]
+urlpeek = "urlpeek.__main__"
